@@ -2,8 +2,11 @@
   <library name="mysql-connector-j-8.4.0">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/external Libaray/mysql-connector-j-8.4.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/external Libaray/exp4j-0.3.11.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/external Libaray/exp4j-0.3.11-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

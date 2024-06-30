@@ -1,11 +1,9 @@
 package com.database;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class Database {
-    private static Database instance;
+    protected static Database instance;
     private Connection connection;
     private String url = "jdbc:mysql://localhost:3306/tokyo_game";
     private String username = "root";
@@ -24,6 +22,15 @@ public class Database {
         return connection;
     }
 
+    public ResultSet executeQuery(String query) throws SQLException {
+        Statement statement = connection.createStatement();
+        return statement.executeQuery(query);
+
+    }
+    public int executeUpdate(String query) throws SQLException {
+        Statement statement = connection.createStatement();
+        return statement.executeUpdate(query);
+    }
     public static Database getInstance() throws SQLException {
         if (instance == null) {
             instance = new Database();
