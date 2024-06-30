@@ -2,7 +2,6 @@ package com.tui.respond.massage;
 
 public class OutputMassage {
     private static OutputMassage instance;
-
     //region Error
     public String usernameEmpty                 = "Error: Username is required.";
     public String passwordEmpty                 = "Error: Password is required.";
@@ -23,7 +22,6 @@ public class OutputMassage {
     public String passwordIncorrect             = "Error: Password and Username don’t match!";
     public String oldPasswordMismatch           = "Error: The old password does not match.";
     public String newPasswordSameAsOld          = "Error: The new password cannot be the same as the old password.";
-
     public String reEnterPassword               = "Please re-enter your password:";
     public String answerToSecurityQuestion      = "Please enter your answer to \"%s\"";
     //endregion
